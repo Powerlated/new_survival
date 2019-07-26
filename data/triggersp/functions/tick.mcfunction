@@ -2,11 +2,13 @@
 # Handle Trigger SP
 scoreboard players enable @a sp
 
-execute as @a[scores={sp=1..,sp_on=0}] if entity @s[gamemode=survival] run function triggersp:sp_spectator
+execute as @a[scores={sp=1..}] if entity @s[gamemode=survival] run function triggersp:sp_spectator
 #execute as @a if score @s sp matches 1.. if entity @s[gamemode=spectator] run function triggersp:sp_survival
 execute as @a[scores={sp=1..,sp_on=1}] at @s if entity @s[gamemode=spectator] anchored eyes unless block ~ ~ ~ air run function triggersp:sp_survival_err
 execute as @a[scores={sp=1..,sp_on=1}] at @s if entity @s[gamemode=spectator] anchored eyes if block ~ ~ ~ air run function triggersp:sp_survival
-execute as @a[scores={sp=1..,sp_on=0}] at @s if entity @s[gamemode=spectator] run function triggersp:spf_survival
+
+execute as @a[scores={sp=1..,sp_on=0}] at @s if entity @s[gamemode=spectator] anchored eyes unless block ~ ~ ~ air run function triggersp:sp_survival_err
+execute as @a[scores={sp=1..,sp_on=0}] at @s if entity @s[gamemode=spectator] anchored eyes if block ~ ~ ~ air run function triggersp:spf_survival
 
 scoreboard players set @a sp 0
 
@@ -15,6 +17,9 @@ scoreboard players enable @a spf
 
 execute as @a[scores={spf=1..,sp_on=0}] if entity @s[gamemode=survival] run function triggersp:spf_spectator
 execute as @a[scores={spf=1..,sp_on=0}] at @s if entity @s[gamemode=spectator] run function triggersp:spf_survival
+
+execute as @a[scores={spf=1..,sp_on=1}] at @s if entity @s[gamemode=spectator] anchored eyes unless block ~ ~ ~ air run function triggersp:sp_survival_err
+execute as @a[scores={spf=1..,sp_on=1}] at @s if entity @s[gamemode=spectator] anchored eyes if block ~ ~ ~ air run function triggersp:sp_survival
 
 scoreboard players set @a spf 0
 
