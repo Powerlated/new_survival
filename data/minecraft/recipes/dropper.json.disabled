@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shaped",
+  "pattern": ["###", "# #", "#R#"],
+  "key": {
+    "#": {
+      "item": "minecraft:cobblestone"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "minecraft:dropper",
+    "count": 4
+  }
+}
