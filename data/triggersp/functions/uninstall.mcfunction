@@ -13,3 +13,4 @@ scoreboard objectives remove sp
 scoreboard objectives remove spf
 
 scoreboard objectives remove sp_on
+scoreboard objectives remove spawn

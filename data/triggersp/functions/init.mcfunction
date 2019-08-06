@@ -12,3 +12,5 @@ scoreboard objectives add spf_xr dummy "X Rotation"
 
 scoreboard objectives add spf_dim dummy "Dimension"
 scoreboard players set #spf_y spf_y 1
+
+scoreboard objectives add spawn trigger "Trigger Spawn"
