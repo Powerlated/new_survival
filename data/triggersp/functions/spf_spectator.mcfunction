@@ -1,7 +1,7 @@
 gamemode spectator @s
-scoreboard players set @s spf 0
+scoreboard players set @s spf_on 1 
 
 function triggersp:setpos
 
+scoreboard players set @s spf 0
 
-#execute at @s run spreadplayers ~ ~ 0 1 false @s

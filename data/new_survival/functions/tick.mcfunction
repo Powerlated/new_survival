@@ -32,7 +32,8 @@ execute as @a[scores={ns_softban=1..}] run scoreboard players operation @s ns_so
 execute as @a[scores={ns_softban=1..}] run scoreboard players operation @s ns_softban_hrs /= @s ns_softban_60
 execute as @a[scores={ns_softban=1..}] run scoreboard players operation @s ns_softban_hrs /= @s ns_softban_20
 execute as @a[scores={ns_softban=1..}] run scoreboard players add @s ns_softban_hrs 1
-execute as @a[scores={ns_softban=1..}] run function new_survival:softban_effects
+execute as @a[scores={ns_softban=1..}] if score #hc_tick hc_tick matches 99 run function new_survival:softban_effects
+execute as @a[scores={ns_softban=1..}] run gamemode spectator @s
 execute as @a[scores={ns_softban=1}] run title @s reset
 
 execute as @a[scores={ns_softban_set=1..}] run scoreboard players operation @s ns_softban_set *= @s ns_softban_20

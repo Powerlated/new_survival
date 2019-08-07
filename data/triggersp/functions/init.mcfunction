@@ -1,6 +1,7 @@
 scoreboard objectives add sp trigger "Trigger SP"
 scoreboard objectives add sp_on dummy "Trigger SP On"
 scoreboard objectives add spf trigger "Trigger SP Fly"
+scoreboard objectives add spf_on dummy "Trigger SP Fly On"
 scoreboard objectives add sp_help trigger "Trigger SP Help"
 
 scoreboard objectives add spf_x dummy "X"

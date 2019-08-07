@@ -1,14 +1,22 @@
+execute as @a[scores={sp=1..,ns_softban=1..}] run tellraw @s {"color":"red","text":"You are still banned!"}
+execute as @a[scores={spf=1..,ns_softban=1..}] run tellraw @s {"color":"red","text":"You are still banned!"}
+
+execute as @a[scores={sp=1..,ns_softban=1..}] run scoreboard players set @s sp 0
+execute as @a[scores={spf=1..,ns_softban=1..}] run scoreboard players set @s spf 0
 
 # Handle Trigger SP
 scoreboard players enable @a sp
 
+execute as @a[scores={sp=1..,sp_on=0,spf_on=0}] at @s if entity @s[gamemode=spectator] run function triggersp:tp_home
+
 execute as @a[scores={sp=1..}] if entity @s[gamemode=survival] run function triggersp:sp_spectator
-#execute as @a if score @s sp matches 1.. if entity @s[gamemode=spectator] run function triggersp:sp_survival
+
+execute as @a[scores={sp=1..,spf_on=1}] at @s if entity @s[gamemode=spectator] run function triggersp:spf_survival
+
 execute as @a[scores={sp=1..,sp_on=1}] at @s if entity @s[gamemode=spectator] anchored eyes unless block ~ ~ ~ air run function triggersp:sp_survival_err
 execute as @a[scores={sp=1..,sp_on=1}] at @s if entity @s[gamemode=spectator] anchored eyes if block ~ ~ ~ air run function triggersp:sp_survival
 
-execute as @a[scores={sp=1..,sp_on=0}] at @s if entity @s[gamemode=spectator] anchored eyes unless block ~ ~ ~ air run function triggersp:sp_survival_err
-execute as @a[scores={sp=1..,sp_on=0}] at @s if entity @s[gamemode=spectator] anchored eyes if block ~ ~ ~ air run function triggersp:spf_survival
+
 
 scoreboard players set @a sp 0
 
