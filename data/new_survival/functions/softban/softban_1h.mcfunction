@@ -1,0 +1,1 @@
+scoreboard players set @s ns_softban_set 1
