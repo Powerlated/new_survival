@@ -8,3 +8,9 @@ scoreboard objectives add ns_softban_hrs dummy
 scoreboard objectives add ns_softban_60 dummy
 scoreboard objectives add ns_softban_20 dummy
 scoreboard objectives add ns_softban_set dummy
+
+scoreboard objectives add ns_itemrc dummy
+
+scoreboard objectives add health health "Health"
+
+scoreboard objectives add SidebarStats dummy "Sidebar Stats"

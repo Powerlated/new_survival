@@ -1,16 +1,19 @@
 {
   "type": "crafting_shaped",
-  "pattern": ["###", "#R#", "# #"],
+  "pattern": ["###", "#S#", "#R#"],
   "key": {
     "#": {
       "item": "minecraft:cobblestone"
     },
     "R": {
       "item": "minecraft:redstone"
-    }
+    },
+      "S": {
+          "item":"minecraft:stick"
+      }
   },
   "result": {
     "item": "minecraft:dispenser",
-    "count": 4
+    "count": 1
   }
 }

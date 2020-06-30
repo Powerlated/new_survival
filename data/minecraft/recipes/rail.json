@@ -1,16 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": ["X X", "X#X", "X X"],
-  "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "X": {
-      "item": "minecraft:iron_ingot"
-    }
-  },
-  "result": {
-    "item": "minecraft:rail",
-    "count": 48
+	  "type": "minecraft:crafting_shaped",
+	  "pattern": ["X X", "X#X", "X X"],
+	  "key": {
+	    "#": {
+	      "item": "minecraft:stick"
+	    },
+	    "X": {
+	      "item": "minecraft:iron_ingot"
+	    }
+	  },
+	  "result": {
+	    "item": "minecraft:rail",
+	    "count": 24
   }
 }
