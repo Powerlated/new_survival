@@ -1,0 +1,1 @@
+{"triggersp":{"$func":["spf_survival","init","setpos","sp_spectator","sp_survival","spf_spectator","spf_survival","tick","uninstall","gopos","pos","help"]},"new_survival":{"$func":["init","tick"]}}
