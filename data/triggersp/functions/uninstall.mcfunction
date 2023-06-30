@@ -1,17 +1,14 @@
 # Removes all scores required by the datapack
 
-scoreboard objectives remove spf_x
-scoreboard objectives remove spf_y
-scoreboard objectives remove spf_z
+scoreboard objectives remove freecam_x
+scoreboard objectives remove freecam_y
+scoreboard objectives remove freecam_z
 
-scoreboard objectives remove spf_yr
-scoreboard objectives remove spf_xr
+scoreboard objectives remove freecam_yr
+scoreboard objectives remove freecam_xr
 
-scoreboard objectives remove sp_help
+scoreboard objectives remove freecam_help
 
-scoreboard objectives remove sp
-scoreboard objectives remove spf
+scoreboard objectives remove fc
 
-scoreboard objectives remove sp_on
-scoreboard objectives remove spf_on
-scoreboard objectives remove spawn
+scoreboard objectives remove freecam_on
